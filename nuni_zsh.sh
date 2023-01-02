@@ -19,3 +19,9 @@ login_as_sa() {
     }
     rm -f $key_file_name
 } 
+
+# requires fnm installation (brew)
+eval "$(fnm env --use-on-cd)"
+
+# requires pyenv installation
+eval "$(pyenv init -)"

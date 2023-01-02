@@ -1,0 +1,26 @@
+# Formulae (regular brew)
+fnm
+gettext
+gh
+git
+pyenv
+yarn
+
+# Casks:
+bitwarden
+font-hack-nerd-font
+slack
+discord
+google-chrome
+visual-studio-code
+docker
+iterm2
+vlc
+fig
+kubectl
+maccy
+whatsapp
+telegram
+figma
+rectangle
+zoom 
