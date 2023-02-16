@@ -1,4 +1,6 @@
-export PROJ=kov-demo
+# Nuni script
+
+export PROJ=kov-dev
 export EMAIL=nuni@kovrr.com
 
 # configure the new gcloud context
@@ -11,7 +13,7 @@ export CLUSTER=$(gcloud container clusters list --format="value(name)") # assume
 export ZONE=$(gcloud container clusters list --format="value(zone)") # assume there's one cluster
 gcloud config set compute/zone $ZONE
 export FULL_CLUSTER_NAME=gke_$PROJ\_$ZONE\_$CLUSTER
-
+gcloud auth application-default login --project="${PROJ}"
 # create the kubernetes context and rename to something readable
 gcloud container clusters get-credentials $CLUSTER --region=$ZONE
 kubectl config rename-context $FULL_CLUSTER_NAME $PROJ

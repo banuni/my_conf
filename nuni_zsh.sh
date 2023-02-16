@@ -25,3 +25,6 @@ eval "$(fnm env --use-on-cd)"
 
 # requires pyenv installation
 eval "$(pyenv init -)"
+
+# requires spaceship
+source "/opt/homebrew/opt/spaceship/spaceship.zsh"

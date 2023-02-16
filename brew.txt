@@ -3,6 +3,7 @@ fnm
 gettext
 gh
 git
+kubectx
 pyenv
 yarn
 
@@ -21,6 +22,7 @@ kubectl
 maccy
 whatsapp
 telegram
-figma
 rectangle
 zoom 
+httpie
+raycast
