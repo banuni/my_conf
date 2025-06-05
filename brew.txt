@@ -6,9 +6,9 @@ git
 kubectx
 pyenv
 yarn
+jq
 
 # Casks:
-bitwarden
 font-hack-nerd-font
 slack
 discord
@@ -26,3 +26,4 @@ rectangle
 zoom 
 httpie
 raycast
+starship

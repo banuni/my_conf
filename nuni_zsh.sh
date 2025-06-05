@@ -23,8 +23,12 @@ login_as_sa() {
 # requires fnm installation (brew)
 eval "$(fnm env --use-on-cd)"
 
-# requires pyenv installation
-eval "$(pyenv init -)"
+# requires starship
+export STARSHIP_CONFIG="$(dirname "${(%):-%x}")/starship.toml"
+eval "$(starship init zsh)"
 
-# requires spaceship
-source "/opt/homebrew/opt/spaceship/spaceship.zsh"
+
+alias pp="pnpm"
+
+# builds standalone next and copies what's needded
+# run from `apps/front` context
