@@ -27,6 +27,8 @@ eval "$(fnm env --use-on-cd)"
 export STARSHIP_CONFIG="$(dirname "${(%):-%x}")/starship.toml"
 eval "$(starship init zsh)"
 
+# increase node memory limit
+export NODE_OPTIONS="--max-old-space-size=8192"
 
 alias pp="pnpm"
 
