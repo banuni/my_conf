@@ -1,7 +1,13 @@
-## manual downloads and installations
+## Manual Downloads and Installations
 
-- ARC browser: download from personal link
-- Apple x-code: in the app store
-- [CRON calendar](https://cron.com/download)
-- [gcloud cli](https://cloud.google.com/sdk/docs/install)
-- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+These require manual installation (not available via `brew bundle`):
+
+- **ARC browser** — download from personal link
+- **Apple Xcode** — install from App Store, then run `xcode-select --install`
+- **gcloud CLI** — [cloud.google.com/sdk/docs/install](https://cloud.google.com/sdk/docs/install)
+- **Claude Code** — `npm install -g @anthropic-ai/claude-code`
+
+### Already in Brewfile (no longer manual)
+
+- ~~kubectl~~ — now installed via `brew bundle`
+- ~~CRON calendar~~ — now `notion-calendar` in Brewfile

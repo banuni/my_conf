@@ -30,7 +30,15 @@ disabled = true  # Disable git metrics to reduce git operations
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bold blue" 
+style = "bold blue"
 
 [nodejs]
-format= '[$symbol($version )]($style)'
+format = '[$symbol($version )]($style)'
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[kubernetes]
+disabled = false
+format = '[$symbol$context( \($namespace\))]($style) '
+style = "cyan"
